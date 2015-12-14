@@ -1,0 +1,50 @@
+apply plugin: 'java'
+
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+version = '0.0.1'
+
+
+repositories {
+    flatDir {dirs "libs"}
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '4.12'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile (
+            "org.slf4j:slf4j-log4j12:1.7.12",
+            "log4j:log4j:1.2.17",
+
+            'org.json:json:20151123',
+            'com.jcraft:jsch:0.1.53',
+
+            'org.apache.httpcomponents:httpclient:4.5.1'
+
+    )
+
+    testCompile (
+            "junit:junit:${junitVersion}"
+    )
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = "utf-8"
+}
+
+tasks.withType(Javadoc){
+    options.encoding = "utf-8"
+    options.charSet = "utf-8"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}
