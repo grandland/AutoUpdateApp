@@ -17,10 +17,11 @@ public class ClientMain {
         fr.close();
 
         ClientUpdater updater = new ClientUpdater(
-                Integer.valueOf(props.getProperty("version")),
-                props.getProperty("updateServer"),
-                Integer.valueOf("updateInterval"),
-                Integer.valueOf("timeout"));
+                Integer.valueOf(props.getProperty("client.version")),
+                props.getProperty("client.downloadPath"),
+                props.getProperty("service.updateServer"),
+                Integer.valueOf(props.getProperty("service.updateInterval")),
+                Integer.valueOf(props.getProperty("service.timeout")));
         updater.update();
 
     }

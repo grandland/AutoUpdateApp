@@ -28,14 +28,17 @@ public class UpdateService {
      * */
     public UpdateResponse requestUpdate(int version){
         //TODO request url
+        //TODO parse response json to object.
         return null;
     }
 
     /**
      * 下载
+     * @return localPath 下载后的本地文件地址
      * */
-    public void download(String localPath, String remotePath){
-        //download
+    public String download(String localPath, String remotePath){
+        //TODO download
+        return null;
     }
 
 

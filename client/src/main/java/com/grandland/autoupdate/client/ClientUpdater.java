@@ -10,9 +10,10 @@ public class ClientUpdater {
 
     UpdateService updateService ;
 
+    private String downloadLocalPath;
     private int version = 0 ;
 
-    public ClientUpdater(int version, String serverBaseUrl, int updateInterval, int timeout){
+    public ClientUpdater(int version,String downloadLocalPath, String serverBaseUrl, int updateInterval, int timeout){
         updateService = new UpdateService(serverBaseUrl, updateInterval, timeout);
     }
 
@@ -47,6 +48,7 @@ public class ClientUpdater {
      * @return  true if delete something, false otherwise.
      * */
     public boolean cleanUp(){
+        //TODO some clean up
         return false;
     }
 
