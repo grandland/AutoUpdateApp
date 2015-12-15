@@ -18,7 +18,7 @@ public class ClientUpdater {
     }
 
     /**
-     * ÏÂÔØ¸üĞÂ
+     * ä¸‹è½½æ›´æ–°
      * @return  true if updated, false otherwise.
      * */
     public boolean update(){
@@ -32,8 +32,8 @@ public class ClientUpdater {
     }
 
     /**
-     * Ö´ĞĞ¸üĞÂ
-     * @param filePath ¸üĞÂÏÂÔØµÄÎ»ÖÃ
+     * æ‰§è¡Œæ›´æ–°
+     * @param filePath æ›´æ–°ä¸‹è½½çš„ä½ç½®
      * */
     public boolean execUpdate(String filePath){
         //TODO unzip files
@@ -43,8 +43,8 @@ public class ClientUpdater {
     }
 
     /**
-     * ÇåÀíÏÖ³¡
-     * ÔÚĞÂ³ÌĞòÆô¶¯ºó½øĞĞ
+     * æ¸…ç†ç°åœº
+     * åœ¨æ–°ç¨‹åºå¯åŠ¨åè¿›è¡Œ
      * @return  true if delete something, false otherwise.
      * */
     public boolean cleanUp(){

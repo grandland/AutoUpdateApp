@@ -7,7 +7,7 @@ import java.util.Properties;
 
 /**
  * Created by yestin on 2015/12/14.
- * Ö÷Àà
+ * ä¸»ç±»
  */
 public class ClientMain {
     public static void main(String[] args) throws IOException {

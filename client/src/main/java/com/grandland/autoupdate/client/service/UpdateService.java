@@ -4,7 +4,7 @@ import com.grandland.autoupdate.client.bean.UpdateResponse;
 
 /**
  * Created by yestin on 2015/12/14.
- * ÓÃÓÚ¼ì²é¸üĞÂ³ÌĞòµÄ·şÎñ¡£
+ * ç”¨äºæ£€æŸ¥æ›´æ–°ç¨‹åºçš„æœåŠ¡ã€‚
  */
 public class UpdateService {
 
@@ -23,7 +23,7 @@ public class UpdateService {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñĞèÒª¸üĞÂµÄ·½·¨
+     * åˆ¤æ–­æ˜¯å¦éœ€è¦æ›´æ–°çš„æ–¹æ³•
      * @return  null if timeout; UpdateResponse entity otherwise.
      * */
     public UpdateResponse requestUpdate(int version){
@@ -33,8 +33,8 @@ public class UpdateService {
     }
 
     /**
-     * ÏÂÔØ
-     * @return localPath ÏÂÔØºóµÄ±¾µØÎÄ¼şµØÖ·
+     * ä¸‹è½½
+     * @return localPath ä¸‹è½½åçš„æœ¬åœ°æ–‡ä»¶åœ°å€
      * */
     public String download(String localPath, String remotePath){
         //TODO download

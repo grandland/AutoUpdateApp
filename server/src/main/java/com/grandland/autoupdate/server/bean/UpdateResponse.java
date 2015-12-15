@@ -1,4 +1,4 @@
-package com.grandland.autoupdate.client.bean;
+package com.grandland.autoupdate.server.bean;
 
 import java.util.Date;
 
